@@ -1,0 +1,21 @@
+[{
+	"OrderID": "4500000248",
+	"CustomerID": "Pièces de camion Steve Canada",
+	"EmployeeID": "V7000",
+	"ShipVia": "Moneytown Lane",
+	"ShipName": "EN",
+	"ShipAddress": "123",
+	"ShipCity": "Kanata",
+	"ShipRegion": "Ontario",
+	"ShipPostalCode": "K2K 1P4",
+	"ShipCountry": "Canada",
+	"__metadata": {
+		"type": "NorthwindModel.Order_Detail",
+		"uri": "http://services.odata.org/V2/Northwind/Northwind.svc/Orders(4500000248)"
+	},
+	"Order_Details": {
+		"__deferred": {
+			"uri": "http://services.odata.org/V2/Northwind/Northwind.svc/Orders(4500000248)/Order_Details"
+		}
+	}
+}]

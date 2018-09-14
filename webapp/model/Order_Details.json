@@ -1,0 +1,21 @@
+[{
+	"Discount": "Steve",
+	"Order": {
+		"__deferred": {
+			"uri": "http://services.odata.org/V2/Northwind/Northwind.svc/Order_Details(OrderID=4500000248,ProductID=11)/Order"
+		}
+	},
+	"OrderID": 1234567,
+	"UnitPrice": "Canada",
+	"Quantity": "00610",
+	"__metadata": {
+		"type": "NorthwindModel.Order_Detail",
+		"uri": "http://services.odata.org/V2/Northwind/Northwind.svc/Order_Details(OrderID=4500000248,ProductID=11)"
+	},
+	"Product": {
+		"__deferred": {
+			"uri": "http://services.odata.org/V2/Northwind/Northwind.svc/Order_Details(OrderID=4500000248,ProductID=11)/Product"
+		}
+	}
+
+}]

@@ -1,0 +1,61 @@
+<mvc:View controllerName="com.Manac_Mon_Compte.controller.Account" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form"
+	xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page id="page" title="{i18n>title}">
+				<ObjectHeader id="oh1" responsive="true" intro="Nom: Pièces de camion Steve Canada" title="ID: V7000" backgroundDesign="Translucent">
+					<attributes>
+						<ObjectAttribute id="languageAttribute" title="Langue de communication" text="EN"/>
+					</attributes>
+				</ObjectHeader>
+				<Panel id="panelForm"/>
+				<content>
+					<VBox>
+						<Table id="lineItemsList" width="auto" items="{path: '/Order_Details'}" updateFinished="onListUpdateFinished" 
+							noDataText="{i18n>detailLineItemTableNoDataText}" busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin">
+							<headerToolbar>
+								<Toolbar id="lineItemsToolbar">
+									<Label text="Information Banquaire" design="Bold"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="25%">
+									<Text text="Pays de la banque"/>
+								</Column>
+								<Column width="25%">
+									<Text text="Numéro de compte"/>
+								</Column>
+								<Column width="25%">
+									<Text text="Clé Banaire"/>
+								</Column>
+								<Column width="25%">
+									<Text text="Intitulé de compte"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle">
+									<cells>
+										<Text text="{UnitPrice}" wrapping="false"/>
+										<Text text="{OrderID}" wrapping="false"/>
+										<Text text="{Quantity}" wrapping="false"/>
+										<Text text="{Discount}" wrapping="false"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</VBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button id="edit" text="Modifier" enabled="true" press="handleEditPress"/>
+							<Button id="save" text="Sauvegarder" type="Emphasized" visible="false" press="handleSavePress"/>
+							<Button id="cancel" text="Annuler" visible="false" press="handleCancelPress"/>
+							<Button text="Retour" press="onBack"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
